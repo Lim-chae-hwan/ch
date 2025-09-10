@@ -4,15 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "kysely-codegen --url='env(POSTGRES_URL)' --dialect=postgres && next build",
-    "start": "next start",
-    "lint": "next lint",
-    "codegen": "kysely-codegen --url='env(POSTGRES_URL)' --dialect=postgres"
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p $PORT",
-    "lint": "next lint",
-    "codegen": "kysely-codegen --url='env(POSTGRES_URL)' --dialect=postgres"
+  "build": "next build",
+  "start": "next start -p $PORT",
+  "lint": "next lint",
+  "codegen": "kysely-codegen --url='env(POSTGRES_URL)' --dialect=postgres"
   },
   "engines": { "node": "20.x" }
   "dependencies": {
